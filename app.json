@@ -1,138 +1,142 @@
 {
-  " name " : " Heroku xenoboot de Kuro " ,
-  " description " : " Modifications supplémentaires apportées au xenoboot de Fulcos. Veuillez lire attentivement le fichier LISEZMOI. " ,
-  " keywords " : [
-    " Heroku " ,
-    " xenoboot " ,
-    " Discord " ,
-    " Discord Bot " ,
-    " Divertissement " ,
-    " Fulcos "
+  "name": "Fulcos Heroku xenoboot",
+  "description": "Additional changes to Fulcos xenoboot. Please read the README carefully.",
+  "keywords": [
+    "Heroku",
+    "xenoboot",
+    "Discord",
+    "Discord Bot",
+    "Entertainment",
+    "Fulcos"
   ],
-  " site Web " : "https://team-xeno-esport.hubside.fr/" ,
-  " référentiel " : " https://github.com/FULCOS/xenoboot " ,
-  " logo " : "https://imgur.com/iaBMbhF.jpg " ,
+  "website": "https://team-xeno-esport.hubside.fr/",
+  "repository": "https://github.com/FULCOS/xenoboot",
+  "logo": "https://imgur.com/iaBMbhF.jpg",
   
-  " addons " : [
-    " heroku-redis " ,
-    " heroku-postgresql " ,
-    " logdna "
+  "addons": [
+    "heroku-redis",
+    "heroku-postgresql",
+    "logdna"
   ],
-  " env " : {
-    " SELFBOT_CLIENTID " : {
-      " description " : " ID client Discord. Téléchargez-le ici: https://discordapp.com/developers/applications/ " ,
-	  " required " : true
+  "env": {
+    "SELFBOT_CLIENTID": {
+      "description": "Discord Client Id. Get it here: https://discordapp.com/developers/applications/",
+	  "required": true
     },
-    " SELFBOT_TOKEN " : {
-      " description " : " Jeton Discord BOT. Obtenez-le ici: https://discordapp.com/developers/applications/ " ,
-	  " required " : true
+    "SELFBOT_TOKEN": {
+      "description": "Discord BOT token. Get it here: https://discordapp.com/developers/applications/",
+	  "required": true
     },
-    " SELFBOT_OWNEDIDS " : {
-      " description " : " Identifiant du propriétaire, pour affecter plus d'une virgule d'utilisation (,) à séparer. Instructions pour l'obtenir: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/ " ,
-	  " required " : true
+    "SELFBOT_OWNEDIDS": {
+      "description": "Owners Id, to assign more than one use comma(,) to separate. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": true
     },
-    " SELFBOT_LOLAPIKEY " : {
-      " description " : " LoL Api Key. Instructions pour obtenir ceci: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/ " ,
-	  " required " : faux
+    "SELFBOT_LOLAPIKEY": {
+      "description": "LoL Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
     },
-    " SELFBOT_GOOGLEAPIKEY " : {
-      " description " : " Google Api Key. Instructions pour obtenir ceci: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/ " ,
-	  " required " : faux
+    "SELFBOT_GOOGLEAPIKEY": {
+      "description": "Google Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
     },
-    " SELFBOT_MASHAPEKEY " : {
-      " description " : " Mashape Key. Instructions pour obtenir ceci: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/ " ,
-	  " required " : faux
+    "SELFBOT_MASHAPEKEY": {
+      "description": "Mashape Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
     },
-    " SELFBOT_OSUAPIKEY " : {
-      " description " : " Osu Api Key. Instructions pour obtenir ceci: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/ " ,
-	  " required " : faux
+    "SELFBOT_OSUAPIKEY": {
+      "description": "Osu Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
     },
-    " SELFBOT_CLEVERBOTAPIKEY " : {
-      " description " : " CleaverBot Api Key. Instructions pour obtenir ceci: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/ " ,
-	  " required " : faux
+    "SELFBOT_CLEVERBOTAPIKEY": {
+      "description": "CleaverBot Api Key. Instructions how to get this: https://nadekobot.readthedocs.io/en/latest/JSON%20Explanations/",
+	  "required": false
     },
-    " SELFBOT_TOTALSHARDS " : {
-      " description " : " TotalShards. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " 1 "
+    "SELFBOT_TOTALSHARDS": {
+      "description": "TotalShards. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": "1"
     },
-    " SELFBOT_PATREONACCESSTOKEN " : {
-      " description " : " Patreon Access Token. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " "
+    "SELFBOT_PATREONACCESSTOKEN": {
+      "description": "Patreon Access Token. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
     },
-    " SELFBOT_PATREONCAMPAIGNID " : {
-      " description " : " Identifiant de campagne Patreon. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " 334038 "
+    "SELFBOT_PATREONCAMPAIGNID": {
+      "description": "Patreon Campaign Id. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": "334038"
     },
-    " SELFBOT_SHARDRUNCOMMAND " : {
-      " description " : " Shard Run Command. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " "
+    "SELFBOT_SHARDRUNCOMMAND": {
+      "description": "Shard Run Command. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
     },
-    " SELFBOT_SHARDRUNARGUMENTS " : {
-      " description " : " Shard Run Arguments. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " "
+    "SELFBOT_SHARDRUNARGUMENTS": {
+      "description": "Shard Run Arguments. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
     },
-    " SELFBOT_SHARDRUNPORT " : {
-      " description " : " Shard Run port. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " "
+    "SELFBOT_SHARDRUNPORT": {
+      "description": "Shard Run port. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
     },
-    " SELFBOT_MININGPROXYURL " : {
-      " description " : " Mining Proxy Url. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " "
+    "SELFBOT_MININGPROXYURL": {
+      "description": "Mining Proxy Url. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
     },
-    " SELFBOT_MININGPROXYCRED " : {
-      " description " : " Informations d'identification du proxy d'exploration de données. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " valeur " : " " ,
-	  " required " : faux
+    "SELFBOT_MININGPROXYCRED": {
+      "description": "Mining Proxy Credentials. Only touch it, if you know what are you doing.",
+	  "value": "",
+	  "required": false
     },
-    " SELFBOT_BOTLISTTOKEN " : {
-      " description " : " Bot List Token. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " "
+    "SELFBOT_BOTLISTTOKEN": {
+      "description": "Bot List Token. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
     },
-    " SELFBOT_TWITCHCLIENTID " : {
-      " description " : " ID client Twitch " ,
-	  " required " : faux ,
-	  " valeur " : " "
+    "SELFBOT_TWITCHCLIENTID": {
+      "description": "Twitch client Id",
+	  "required": false,
+	  "value": ""
     },
-    " SELFBOT_VOTETOKEN " : {
-      " description " : " Jeton de vote. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " "
+    "SELFBOT_VOTETOKEN": {
+      "description": "Vote Token. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
     },
-    " SELFBOT_VOTEURL " : {
-      " description " : " Vote Url. Ne le touchez que si vous savez ce que vous faites. " ,
-	  " required " : faux ,
-	  " valeur " : " "
+    "SELFBOT_VOTEURL": {
+      "description": "Vote Url. Only touch it, if you know what are you doing.",
+	  "required": false,
+	  "value": ""
     }
   },
-  " formation " : {
-    " travailleur " : {
-      " quantité " : 1 ,
-      " taille " : " gratuit "
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
     }
   },
-  " buildpacks " : [
+  "buildpacks": [
 	{
-		" url " : " https://github.com/challengee/heroku-buildpack-libsodium "
+		"url": "https://github.com/challengee/heroku-buildpack-libsodium"
 	},
 	{
-		" url " : " https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git "
+		"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
 	},
 	{
-		" url " : " https://github.com/dubsmash/heroku-buildpack-opus.git "
+		"url": "https://github.com/dubsmash/heroku-buildpack-opus.git"
 	},
 	{
-		" url " : " https://github.com/appositum/heroku-buildpack-youtube-dl.git "
+		"url": "https://github.com/appositum/heroku-buildpack-youtube-dl.git"
 	},
 	{
-		" url " : " https://github.com/ScarletKuro/dotnetcore-buildpackv2.1.git "
+		"url": "https://github.com/ScarletKuro/dotnetcore-buildpackv2.1.git"
 	}
   ]
 }
+
+
+
+
